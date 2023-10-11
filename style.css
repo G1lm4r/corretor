@@ -1,0 +1,550 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/*barra de topo*/
+.top-bar{
+    position: fixed;
+    
+}
+.logo{
+  height: 14vh;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+a:hover {
+    opacity: 0.7;
+}
+nav{
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serifs;
+    background-color: #00000050;
+    margin-top: -15vh;
+    height: 15vh;
+    width: 100vw;
+    /* box-shadow: 0 0 10px #d0d0d0; */
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+    font-size: small;
+}
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+  
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #ffc710;
+    margin: 8px;
+    transition: 0.3s;
+    
+}
+/*cabeçalho*/
+.header{
+  margin-top: 15vh;
+  margin-bottom: -26px;
+  padding-top: 0.1px ;
+  height: 85vh;
+  width: 100vw;
+  background: url("./imagens/header\ mt\ b.jpeg") ;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.title{
+  color: #fff;
+  width: 90vw;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+#right{
+  margin-right: 0;
+  padding-top: 50px;
+  font-size: 2em;
+  max-width: 600px;
+  display: block;
+}
+#right button {
+  background-color: #ffc710;
+  font-size: .5em;
+  font-weight: 700;
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+}
+#right button:hover{
+  scale: 1.1;
+  transition: ease-in 0.2s;
+}
+button a{
+  color: black;
+}
+
+#left{
+  width: 200px;
+  margin-top: 150px;
+  font-size: 1em;
+  letter-spacing: .5px;
+  line-height: 1.25em;
+  text-align: left;
+  display: block;
+}
+
+/*setores em destaque*/
+.destaque{
+  height: 85vh;
+  width: 100vw;
+  background-color: #fff;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.titleD{
+  font-size: 1.7em;
+  width: 90vw;
+  margin: auto;
+}
+.titleD h1{ 
+  font-weight: 100;
+  padding: 5px 20px;
+  border-left: #000000 solid 2px;
+  letter-spacing: 1px;
+}
+.bloco{
+  display: block;
+}
+
+/*opções de destaque*/
+.visual{
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.choice{
+  width: 300px;
+  height: 400px;
+  border: #c09958 solid 1px;
+  box-shadow: #9c9c9c 1px 2px 10px;
+  
+}
+.choice:hover{
+  scale: 1.01;
+}
+.choice img{
+  width: 100%;
+}
+
+.choice h2{
+  font-size: .8em;
+  font-weight: 100;
+  margin: 5px 0 0 20px;
+}
+.choice h1{
+  margin: 5px 0 0 20px;
+  font-size: 1.5em;
+}
+/* .quarto{
+  list-style: none;
+  list-style-image: url("./imagens/lavanderia.png");
+} */
+
+/*Faça uma visita*/
+.visita{
+  height: 100vh;
+  width: 100vw;
+  margin-top: 67.3px;
+}
+/*parte de cima, lado esquerdo*/
+.up{
+  display: flex;
+  height: 51vh;
+}
+.do{
+  background-color: #ffc710;
+  width: 60vw;
+  padding-left: 40px;
+}
+
+.titleV{
+  border-left: #fff3a6 solid 2px;
+  font-size: 1.7em;
+  width: 100%;
+  margin: auto;
+
+}
+.titleV h1{ 
+  font-weight: 100;
+  padding: 5px 20px;
+  letter-spacing: 1px;
+}
+.do p{
+  margin: auto;
+  margin-bottom: 50px;
+}
+.do #button{
+  background-color: #000;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 15px 30px;
+  cursor: pointer;
+  border: none;
+}
+/*parte de cima, lado direito*/
+.foto1{
+  width: 40vw;
+  height: 100%;
+  overflow: hidden;
+  background: url("./imagens/fc1.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+/*parte de baixo*/
+.down{
+  display: flex;
+  height: auto;
+  width: 100vw;
+}
+/*parte de baixo, lado esquerdo*/
+.foto2{
+  width: 61.05%;
+  height: 50vh;
+  /* overflow: hidden; */
+  background: url("./imagens/fc2.jpeg");
+  background-size: cover;
+  background-position: bottom;
+} 
+
+/*por  que nós*/
+.trabalhar{
+  background: url(./imagens/trabcon\ mtb.png);
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+  padding: 50px 40px;
+  color: #fff;
+  margin-top: 7px;
+  margin-bottom: -22px;
+}
+.titleT{
+  border-left: #ffffff solid 2px;
+  font-size: 1.7em;
+  width: 100%;
+  margin: auto;
+  
+}
+.titleT h1{ 
+  font-weight: 100;
+  padding: 5px 20px;
+  letter-spacing: 1px;
+} 
+.pontoDeVista{
+  width: 80vw;
+  height: 400px;
+  
+  /* margin: auto; */
+  /* background-color: #c09958; */
+}
+.coluna{
+  margin-left: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.ponto{
+  display: flex;
+  width: 100px;
+  margin: 50px;
+}
+.ponto h1{
+  color: #ffc710;
+  font-weight: 100;
+  font-size: 5em;
+  padding: 0;
+  margin: 0;
+}
+.ponto p{
+  font-size: 1.2em;
+  margin: 12px 20px;
+}
+
+/* Comentários */
+.clientes{
+  width: 94.8vw;
+  height: 85vh;
+  background-color: #fff;
+  padding: 50px 40px;
+}
+.titleC{
+  border-left: #000000 solid 2px;
+  font-size: 1.7em;
+  width: 100%;
+  margin: auto;
+  
+}
+.titleC h1{ 
+  font-weight: 100;
+  padding: 5px 20px;
+  letter-spacing: 1px;
+  width: 90vw;
+} 
+.comentarios{
+  display: flex;
+  width: 90vw;
+  justify-content: space-around;
+
+}
+.comentario{
+max-width: 300px;
+height: auto;
+/* border: #000 solid 2px; */
+}
+.aspas{
+  width: 70px;
+}
+.aspas img{
+  width: 100%;
+}
+.contato{
+  background: url("./imagens/contatob\ mt.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 94.8vw;
+  height: 85vh;
+  color: #fff;
+  padding: 50px 40px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+@media (min-width: 900px) {
+  .contato #align{
+    width: 80vw;
+    margin-top: 30%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.titleCtt{
+  border-left: #ffffff solid 2px;
+  font-size: 1.7em;
+  max-width: 45%;
+  height: 80px;
+}
+.titleCtt h1{ 
+  font-weight: 100;
+  padding: 5px 20px;
+  letter-spacing: 1px;
+  width: 90vw;
+  margin: auto;
+  
+} 
+.info{
+  width: auto;
+}
+.info li{
+  list-style: none;
+  line-height: 2em;
+}
+.info img{
+  width: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 2px;
+  margin-bottom: -10px;
+}
+.info img:hover{
+  background-color: #ffc710;
+}
+@media (max-width: 900px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      margin-top: -10vh; 
+      top: 10vh; 
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #00000099;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+      
+    }
+    .mobile-menu {
+      display: block;
+    }
+    a{
+        color: #fff;
+    }
+    .header{
+      height: auto;
+      padding-bottom: 50px;
+    }
+    .title{
+      display: block;
+      margin: auto;
+    }
+    #right{
+      width: 95vw;
+      padding-top: 0;
+    }
+    
+    #left{
+      margin-top: 80px;
+    }
+
+    .foto2{
+      width: 62%;
+    }
+    .coluna{
+      margin-left: -140px;
+    }
+    .titleC h1{
+      width: 80%;
+      margin: 0;
+    }
+     .destaque{
+      padding-bottom: 100px;
+    }
+    .contato{
+      display: block; 
+    }
+    .contato h1{ 
+      width: auto;
+    }
+    .contato, .clientes, footer{
+      width: auto;
+    }
+    .titleCtt{
+      height: auto;
+    }
+    .info{
+      margin-top: 27.5%;
+    }
+    
+    @media (max-width: 750px){
+      .destaque{
+        height: auto;
+      }
+      .visual{
+        display: block;
+      }
+      .choice{
+        margin: auto;
+        margin-top: 30px;
+      }
+      .foto2{
+        width: 100%;
+        background-position: left;
+      }
+      .trabalhar{
+        height: auto;
+        margin-bottom: -22px;
+      }
+      .coluna{
+        display: block;
+        margin-left: 0px;
+        
+      }
+      .ponto{
+        margin: 10px 0;
+      }
+      .clientes{
+        height: auto;
+      }
+      .comentarios{
+        display: block;
+      }
+      footer{
+        height: auto;
+        background-color: #000;
+        padding-top: 2px;
+        margin-bottom: -100px;
+      }
+      @media (max-width: 400px){
+        /* .visita{
+          position: relative;
+        } */
+        #button{
+          position: absolute;
+        
+        }
+        .choice{
+          width: 90vw;
+          height: auto;
+        }
+        .ponto{
+          /* display: block; */
+          font-size: .7em;
+          margin-bottom: 15%;
+        }
+        .contato{
+          margin-bottom: -20px;
+        }
+        .contato ul{
+          margin-left: -30px;
+        }
+        
+      }
+    }
+   
+}
+.nav-list.active {
+    transform: translateX(0);
+}
+@keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
